@@ -247,7 +247,7 @@ Dari menu utama, memilih 0 untuk keluar dari program. Program mencetak pesan pen
 ## 5. Validasi Input & Error Handling  
 Program menangani beberapa jenis kesalahan input supaya tidak crash dan tetap memberi pesan yang jelas ke pengguna.  
 
-a. Input bukan angka
+a. Input bukan angka  
 Method bacaAngka() membungkus Integer.parseInt() dengan try-catch, sehingga kalau pengguna mengetik huruf atau simbol (bukan angka) saat program minta angka, program tidak berhenti paksa — cukup minta input ulang. 
 ```
 static int bacaAngka() {
@@ -303,7 +303,7 @@ if (kategori != 1 && kategori != 2) {
 
 Saat menambah menu, pengguna memilih kategori 5, padahal pilihan yang valid cuma 1 (Makanan) atau 2 (Minuman). Program mendeteksi ini lewat kondisi kategori != 1 && kategori != 2, mencetak "Kategori tidak valid, menu batal ditambahkan.", dan langsung return.  
 
-e. Update dengan input kosong
+e. Update dengan input kosong  
 Saat update, jika pengguna menekan Enter tanpa mengetik apa pun (ingin membiarkan nilai lama), program mengecek dengan isBlank() supaya data lama tidak tertimpa nilai kosong.  
 ```
 System.out.print("Nama baru (" + menuDicari.getNamaMenu() + "): ");
